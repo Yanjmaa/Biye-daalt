@@ -1,0 +1,76 @@
+@import './partials/variables';
+@import './partials/header';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font: normal 1rem/1.5 'Arial', sans-serif;
+    overflow-x: hidden;
+    font-size: 14px;
+    ul {
+        padding: 20px 0;
+        color: #fff;
+        margin-bottom: 0;
+        li {
+            list-style: none;
+            position: relative;
+            width: 6px;
+            margin: 0 auto;
+            background: #000075;
+            div {
+                position: relative;
+                width: 450px;
+                padding: 0.3rem;
+                background: rgb(31, 58, 147);
+                transition: all 0.5s ease-in-out;
+                p {
+                    margin-bottom: 0;
+                    color: #cecece;
+                }
+            }
+        }
+    }
+  
+}
+
+.container ul li:nth-child(odd) div {
+    left: 45px;
+}
+
+.container ul li:nth-child(even) div {
+    left: -490px;
+}
+
+@media(max-width: 600px) {
+    .container {
+        ul li {
+            margin-left: 20px;
+            div {
+                width: calc(100vw - 90px);
+            }
+        }
+    }
+
+    .container ul li:nth-child(even) div {
+        left: 45px !important;
+        margin: 5px 0;
+    }
+}
+
+@media(max-width: 800px) {
+    .container {
+        ul li div {
+            width: 300px;
+        }
+    }
+
+    .container ul li:nth-child(even) div {
+        left: -340px;
+    }
+}
+
+@import './partials/footer';

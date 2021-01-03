@@ -1,0 +1,59 @@
+.footer {
+    width: 100%;
+    color: $textColor;
+    background: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    border-top: 1px solid #cecece;
+    &__menu {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        .left {
+            width: 30%;
+            margin-top: 6px;
+            
+            ul li {
+                margin: 2px 0;
+                list-style: none;
+            }
+            a {
+                color: $textColor;
+                text-decoration: none;
+            }
+        }
+    
+        h1 {
+            font-size: 13px !important;
+            font-weight: 700;
+        }
+    
+        .address {
+            margin-top: 6px;
+            width: 30%;
+            p { 
+                margin-bottom: 0;
+            }
+            
+        }
+    
+        .contact {
+            margin-top: 6px;
+            width: 30%;
+        } 
+        a {
+            color: $textColor;
+        } 
+    }
+    
+}
+
+.id {
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    p {
+        margin-bottom: 0;
+    }
+}

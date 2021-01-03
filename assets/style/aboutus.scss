@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import './partials/variables';
+@import './partials/header';
+
+body {
+    background: url(../images/aboutus-cover.jpeg) no-repeat center center/cover;
+}
+
+.container {
+        .main-text {
+            margin: 10px 0;
+            padding: 5px 10px;
+            color: #fff;
+            text-align: center;
+            line-height: 1.4;
+            background: rgba(31, 58, 147, 0.8);
+            border-radius: 30px;
+            p {
+                margin-top: 5px;
+                font-size: 16px;
+            }
+        }
+
+        .swiper {
+            height: 70vh;
+            position: relative;
+            // background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 10px;
+            padding: 0;
+                .swiper-container {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    border-radius: 30px;
+                    .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                
+                        /* Center slide text vertically */
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                        
+                    img {
+                        width: 100%;
+                    }
+                }
+            } 
+        } 
+    }
+
+@import './partials/footer';
+
+
+@media(max-width: 800px) {
+    .swiper {
+        height: 60vh;
+    }
+}

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import './partials/variables';
+@import './partials/header';
+
+body {
+    background: url(../images/coverpic1.jpeg) no-repeat center center/cover;
+}
+    .container {
+        display: grid;
+        grid-template-areas: 
+        'moto moto moto'
+        'swiper swiper greetings'
+        'aboutus aboutus aboutus'; 
+        text-align: center;
+        grid-gap: 0.3rem;
+        color: #fff;
+    
+    .moto {
+        grid-area: moto;
+        margin: 3px;
+        background: rgba(31, 58, 147, 0.7);
+        border-radius: 20px;
+    }
+
+    .swiper {
+        grid-area: swiper;
+    }
+
+    .greetings {
+        grid-area: greetings;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .aboutus {
+        grid-area: aboutus;
+        padding: 10px;
+        margin: 5px 0;
+        background: rgba(31, 58, 147, 0.7);
+        border-radius: 20px;
+    }
+
+    .swiper {
+        height: 50vh;
+        position: relative;
+        // background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                border-radius: 30px;
+                .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+            
+                    /* Center slide text vertically */
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    
+                img {
+                    width: 100%;
+                }
+            }
+        }       
+    }
+}        
+
+@import './partials/footer';
+ 
+@media(max-width: 500px) {
+    .container {
+        grid-template-areas: 
+        'moto'
+        'swiper'
+        'greetings'
+        'aboutus';
+        .moto h3 {
+            font-size: 18px;
+        }
+        .swiper {
+            height: 40vh;
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .container {
+        grid-template-areas: 
+        'moto'
+        'swiper'
+        'greetings'
+        'aboutus';
+        .moto h3 {
+            font-size: 20px;
+        }
+    }
+}

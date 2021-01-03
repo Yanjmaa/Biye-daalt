@@ -1,0 +1,42 @@
+@import './partials/variables';
+@import './partials/header';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../images/хг-9.jpg) no-repeat center center/cover;
+}
+hr.head-line {
+    margin: 0 !important;
+}
+
+.container {
+    height: 100%;
+    margin: auto;
+    margin-top: 20px;
+    .info {
+        background: rgba(31, 58, 147, 0.8);
+        border-radius: 20px;
+        color: #fff;
+        font-size: 20px;
+        padding: 7px 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .accordion {
+        opacity: 0.8;
+    }
+}
+@import './partials/footer';
+
+@media(max-width: 800px) {
+    .container {
+        height: 100%;
+        .info {
+            font-size: 14px;
+        }
+    }
+}
