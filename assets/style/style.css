@@ -138,16 +138,19 @@
 }
 
 body {
-  background: url(../images/coverpic1.jpeg) no-repeat center center/cover;
+  background: url(../images/coverpic3.jpeg) no-repeat center center/cover;
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.4);
 }
 
 .container {
+  min-height: 100vh;
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'moto moto moto' 'swiper swiper greetings' 'aboutus aboutus aboutus';
   text-align: center;
   grid-gap: 0.3rem;
-  color: #fff;
+  color: #e6e6e6;
 }
 
 .container .moto {
@@ -171,8 +174,22 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: greetings;
+  height: 50vh;
+}
+
+.container .greetings .greetings-container {
   border-radius: 20px;
-  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.container .greetings .greetings-container .greetings-slide {
+  font-size: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
 }
 
 .container .aboutus {
@@ -188,6 +205,8 @@ body {
 
 .container .swiper {
   height: 50vh;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
   position: relative;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -200,12 +219,14 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .container .swiper .swiper-container .swiper-slide {
   text-align: center;
   font-size: 18px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,6 +309,26 @@ body {
 
 .id p {
   margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .footer__menu {
+    display: block;
+    margin-top: 2px;
+    width: 100%;
+  }
+  .footer__menu .left ul li {
+    display: none;
+  }
+  .footer__menu .address {
+    display: none;
+  }
+  .footer__menu .contact {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media (max-width: 500px) {

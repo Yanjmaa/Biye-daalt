@@ -57,3 +57,23 @@
         margin-bottom: 0;
     }
 }
+
+@media(max-width: 500px) {
+    .footer {
+        &__menu {
+            display: block;
+            margin-top: 2px;
+            width: 100%;
+                .left ul li {
+                    display: none;
+                }
+                .address {
+                    display: none;
+                }
+                .contact {
+                        width: 100%;
+                        display: flex;
+                    }   
+                }
+            }   
+        }

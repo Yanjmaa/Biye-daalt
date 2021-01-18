@@ -137,19 +137,35 @@
           box-sizing: border-box;
 }
 
-.container {
+body {
+  background: url(../images/success-cover.jpeg) no-repeat center center/cover;
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.7);
+}
+
+.container .awards {
   font: normal 1rem/1.5 'Arial', sans-serif;
   overflow-x: hidden;
   font-size: 14px;
 }
 
-.container ul {
+.container .awards .info {
+  background: rgba(31, 58, 147, 0.7);
+  border-radius: 20px;
+  color: #FBFCFC;
+  font-size: 18px;
+  padding: 7px 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.container .awards ul {
   padding: 20px 0;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 0;
 }
 
-.container ul li {
+.container .awards ul li {
   list-style: none;
   position: relative;
   width: 6px;
@@ -157,16 +173,16 @@
   background: #000075;
 }
 
-.container ul li div {
+.container .awards ul li div {
   position: relative;
-  width: 450px;
+  width: 400px;
   padding: 0.3rem;
-  background: #1f3a93;
+  background: rgba(31, 58, 147, 0.7);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.container ul li div p {
+.container .awards ul li div p {
   margin-bottom: 0;
   color: #cecece;
 }
@@ -176,29 +192,7 @@
 }
 
 .container ul li:nth-child(even) div {
-  left: -490px;
-}
-
-@media (max-width: 600px) {
-  .container ul li {
-    margin-left: 20px;
-  }
-  .container ul li div {
-    width: calc(100vw - 90px);
-  }
-  .container ul li:nth-child(even) div {
-    left: 45px !important;
-    margin: 5px 0;
-  }
-}
-
-@media (max-width: 800px) {
-  .container ul li div {
-    width: 300px;
-  }
-  .container ul li:nth-child(even) div {
-    left: -340px;
-  }
+  left: -440px;
 }
 
 .footer {
@@ -267,5 +261,38 @@
 
 .id p {
   margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .footer__menu {
+    display: block;
+    margin-top: 2px;
+    width: 100%;
+  }
+  .footer__menu .left ul li {
+    display: none;
+  }
+  .footer__menu .address {
+    display: none;
+  }
+  .footer__menu .contact {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  .container ul li {
+    margin-left: 10px !important;
+  }
+  .container ul li div {
+    max-width: calc(100vw - 90px);
+  }
+  .container ul li:nth-child(even) div {
+    left: 45px !important;
+    margin: 5px 0;
+  }
 }
 /*# sourceMappingURL=oursuccess.css.map */

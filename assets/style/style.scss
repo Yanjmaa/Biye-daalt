@@ -7,9 +7,11 @@
 @import './partials/header';
 
 body {
-    background: url(../images/coverpic1.jpeg) no-repeat center center/cover;
+    background: url(../images/coverpic3.jpeg) no-repeat center center/cover;
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.4);
 }
     .container {
+        min-height: 100vh;
         display: grid;
         grid-template-areas: 
         'moto moto moto'
@@ -17,8 +19,8 @@ body {
         'aboutus aboutus aboutus'; 
         text-align: center;
         grid-gap: 0.3rem;
-        color: #fff;
-    
+        color: #e6e6e6;
+
     .moto {
         grid-area: moto;
         margin: 3px;
@@ -32,9 +34,22 @@ body {
 
     .greetings {
         grid-area: greetings;
-        border-radius: 20px;
-        background: rgba(0, 0, 0, 0.3);
+        height: 50vh;
+        .greetings-container {
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+            background: rgba(0, 0, 0, 0.4);
+            .greetings-slide {
+                font-size: 15px;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 5px;
+            }
+        }
     }
+
     .aboutus {
         grid-area: aboutus;
         padding: 10px;
@@ -45,6 +60,8 @@ body {
 
     .swiper {
         height: 50vh;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
         position: relative;
         // background: #eee;
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -56,10 +73,11 @@ body {
                 width: 100%;
                 height: 100%;
                 position: absolute;
-                border-radius: 30px;
+                border-radius: 20px;
                 .swiper-slide {
                     text-align: center;
                     font-size: 18px;
+                    transition: 0.8s;
             
                     /* Center slide text vertically */
                     display: -webkit-box;
@@ -80,8 +98,8 @@ body {
                 }
             }
         }       
-    }
-}        
+    } 
+}            
 
 @import './partials/footer';
  

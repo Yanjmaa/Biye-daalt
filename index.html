@@ -3,16 +3,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Мандалговь Хүнс ХХК</title>
         <link rel="stylesheet" href="./assets/style/style.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-      
+        
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v9.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="515505291945950"
+    logged_in_greeting="Thank you for reaching out to us. We will get back to you soon."
+    logged_out_greeting="Thank you for reaching out to us. We will get back to you soon.">
+    </div>
         <!-- Header starts-->
         <div class=header>
             <div class="header__title">
@@ -34,12 +60,12 @@
         <div class="swiper">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./assets/images/zuragg1.jpg"></div>
                     <div class="swiper-slide"><img src="assets/images/25years.jpg"></div>
+                    <div class="swiper-slide"><img src="assets/images/logo.jpg"></div>
+                    <div class="swiper-slide"><img src="./assets/images/zuragg1.jpg"></div>
                     <div class="swiper-slide"><img src="assets/images/pic1.jpg"></div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-            </div>
+                    <!-- <div class="swiper-slide">Slide 5</div> -->
+                </div>
           <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
           <!-- Add Arrows -->
@@ -52,14 +78,15 @@
             <!-- Scroll -->
             <div class="greetings-container">
                 <div class="greetings-slide">
-                    <h4>Мэндчилгээ</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, ex eu sagittis faucibus, ligula ipsum
-                    sagittis magna, et imperdiet dolor lectus eu libero. Vestibulum venenatis eget turpis sed faucibus. Maecenas
-                    in ullamcorper orci, eu ullamcorper sem. Etiam elit ante, luctus non ante sit amet, sodales vulputate odio.
-                    </p>
+                    <h5>Мэндчилгээ</h5>
+                    <p> Дундговь аймагт 1942 онд анхны хүнсний үйлдвэрлэлийн цех байгуулагдаж хөдөө орон нутгийнхаа хэрэгцээг бүрэн хангаж байсан түүхэн уламжлал, туршлагад тулгуурлан Монгол улс зах зээлийн нийгмийн харилцаанд шилжсэн эхний он жилүүд буюу 1995 онд Мандалговь Хүнс ХХК үүсэн  байгуулагдсан юм. 
+                    <p>Мандалговь Хүнс ХХК-ийн түүхэн хөгжлийн 25 жилийн хугацаандаа хүнсний үйлдвэрлэлийн салбарт хүлээн зөвшөөрөгдөж Монгол улсын хүнсний Манлай үйлдвэр хэмээх алдар хүндийг хүртэн, хүнсний төрөл бүрийн таван тансаг бүтээгдэхүүнийг тасралтгүй үйлдвэрлэн орон нутгийн хөгжил цэцэглэлтэнд жинтэй хувь нэмэр оруулдаг Дундговь аймгийн тэргүүлэх компануудын нэг  болсон юм.</p>
+                    <p>Мандалговь Хүнс ХХК нь хүнсний салбарын өнөөгийн чиг хандлага, шинжлэх ухаан, дэвшилтэт техник технологийг үйлдвэрлэлд нэвтрүүлэх, хүн амын хүнсний баталгаат байдлыг хангах, зах зээлд өрсөлдөх чадвараа дээшлүүлэх бодлогыг тууштай баримталж байна.</p>
+                    <p>Мандалговь Хүнс ХХК-ийн үе үеийн нийт ажилчид, хүнсний салбарыг бий болгосон ахмад хүнсчид, хамтран ажиллаж буй бизнесийн түнш хамтрагчид, бэлтгэн нийлүүлэгч, хэрэглэгч харилцагч та бүхэнд чин сэтгэлийн талархал илэрхийлж, цаашдын олон талт хамтын ажиллагаа тасралтгүй цэцэглэн хөгжих болно гэдэгт итгэлтэй байна.</p>
+                    <p>Та бүхний амьдрал тань аз жаргалаар дүүрэн байж, ажил хөдөлмөр бизнесийн амжилт  тань дэвжин дэлгэрэх ерөөл дэвшүүлье.</p>
+                    ЕРӨНХИЙ ЗАХИРАЛ ДАВААХҮҮГИЙН МЯГМАР<br>Монгол Улсын Аж үйлдвэрийн Гавъяат ажилтан 
+                    </p> 
                 </div>
-            <!-- Add Scroll Bar -->
-                <div class="greetings-scrollbar"></div>
             </div>
         </div>
         <div class="aboutus">
@@ -86,23 +113,23 @@
                     <ul>
                         <li><a href="./aboutus.html">Бидний тухай</a></li>
                         <li><a href="./structure.html">Бүтэц, цехүүд</a></li>
-                        <li>Бидний амжилт</li>
+                        <li><a href="./oursuccess.html">Бидний амжилт</a></li>
                         <li><a href="./contactus.html">Холбоо барих</a></li>
                     </ul>
                 </div>
                 <div class="address">
                     <h1>Хаяг, байршил</h1>
-                    <div><p>7-р баг, Сайнцагаан сум,<br>Дундговь аймаг, Мандалговь хот,<br>Монгол улс</p></div>
+                    <div><p>Их тойруу 5, 7-р баг,<br>Сайнцагаан сум, Дундговь аймаг,<br>Монгол улс</p></div>
                 </div>
                 <div class="contact"><h1>Холбоо барих</h1>
                     <div><i class="fas fa-phone-volume"></i> 7059-2335, 7059-2545</div>
-                    <div><i class="fas fa-envelope-open-text"></i><a href="info@mandalgovi-khuns.mn"> info@mandalgovi-khuns.mn</a></div>
+                    <div><i class="fas fa-envelope-open-text"></i><a href="mailto:info@mandalgovi-khuns.mn"> info@mandalgovi-khuns.mn</a></div>
                     <div><i class="fab fa-facebook"></i><a href="https://www.facebook.com/MandalgobiKhuns"> Мандалговь Хүнс ХХК</a></div>
                 </div>
             </div>
         </div>
         <div class="id">
-            <p>Мандалговь Хүнс ХХК, &copy2020. Зохиогчийн эрх хуулиар хамгаалагдсан.</p>
+            <p>Мандалговь Хүнс ХХК, &copy2021. Зохиогчийн эрх хуулиар хамгаалагдсан.</p>
         </div>
         <!-- Footer ends-->
     <script>
@@ -110,7 +137,7 @@
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
         },
         pagination: {
@@ -122,17 +149,6 @@
         prevEl: '.swiper-button-prev',
         },
     });
-    </script>
-    <script>
-        var swiper = new Swiper('.greetings-container', {
-        direction: 'vertical',
-        slidesPerView: 'auto',
-        freeMode: true,
-        scrollbar: {
-         el: '.greetings-scrollbar',
-        },
-        mousewheel: true,
-        });
     </script>
 </body>
 </html>

@@ -138,16 +138,18 @@
 }
 
 body {
-  background: url(../images/aboutus-cover.jpeg) no-repeat center center/cover;
+  background: url(../images/old.jpg) no-repeat center center/cover;
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
 }
 
 .container .main-text {
   margin: 10px 0;
   padding: 5px 10px;
-  color: #fff;
+  color: #e6e6e6;
   text-align: center;
   line-height: 1.4;
-  background: rgba(31, 58, 147, 0.8);
+  background: rgba(31, 58, 147, 0.6);
   border-radius: 30px;
 }
 
@@ -258,6 +260,26 @@ body {
 
 .id p {
   margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .footer__menu {
+    display: block;
+    margin-top: 2px;
+    width: 100%;
+  }
+  .footer__menu .left ul li {
+    display: none;
+  }
+  .footer__menu .address {
+    display: none;
+  }
+  .footer__menu .contact {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media (max-width: 800px) {
